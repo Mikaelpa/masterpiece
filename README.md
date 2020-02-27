@@ -29,3 +29,4 @@ The page will reload if you make edits.<br />
 
 - The data table pagination doesn't change "next page numbers" when navigating through page numbers. Only works with "next" and "prev" buttons. 
 - App sometimes fails to load data from API when trying to change dates without reloading the page.
+- "Graph" or "Heatmap" can sometimes look incomplete or not show at all if not given enough data.
