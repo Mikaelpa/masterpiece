@@ -1,7 +1,6 @@
 ## Using the app
 
 Please fill all the boxes on top of the screen with correct information(see correct format on dates) and hit send.
-Enjoy your data :)
 
 ## Heroku
 
