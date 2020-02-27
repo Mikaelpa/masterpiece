@@ -10,8 +10,14 @@ const getApiData = (start, end, token) => {
   var xmlHttp = new XMLHttpRequest()
   xmlHttp.open( "GET", `https://api.giosg.com/api/reporting/v1/rooms/84e0fefa-5675-11e7-a349-00163efdd8db/chat-stats/daily/?start_date=${start}&end_date=${end}`, false ) 
   xmlHttp.setRequestHeader('Authorization', token)
+      
   xmlHttp.send( null )
-  return xmlHttp.responseText
+  if (xmlHttp.status !== 200) {
+    alert("Authorization failed");
+    return 'error';
+  } else {
+    return xmlHttp.responseText
+    }
 }
 
 const App = () => {
@@ -29,10 +35,11 @@ const App = () => {
   const [noData, setNoData] = useState(true)
   
   const handleSearch = () => {
-    if (startDate === "" && endDate === "" && token === "") {
+    let request = getApiData(startDate, endDate, token)
+    if (request === ('error')) {
       setNoData(true)
     } else {
-        setData(JSON.parse(getApiData(startDate, endDate, token)))
+        setData(JSON.parse(request))
         setNoData(false)
       }
 
