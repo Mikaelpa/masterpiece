@@ -4,8 +4,8 @@ Please fill all the boxes on top of the screen with correct information(see corr
 
 ## Heroku
 
-This project is deployed to Heroku.
-[Link to Heroku application](https://masterpiece1.herokuapp.com/).
+This project is deployed to Heroku --> [Link to Heroku application.](https://masterpiece1.herokuapp.com/)
+
 If for some reason the app behind the link doesn't work, you can alternatively install this locally by following the install instructions below.
 
 ## Installing locally
