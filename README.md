@@ -6,7 +6,7 @@ Please fill all the boxes on top of the screen with correct information(see corr
 
 This project is deployed to Heroku --> [Link to Heroku application.](https://masterpiece1.herokuapp.com/)
 
-If for some reason the app behind the link doesn't work, you can alternatively install this locally by following the install instructions below.
+If for some reason the Heroku link doesn't work, you can try to reload the page a couple of times (Heroku can be slow sometimes) or you can alternatively install this locally by following the install instructions below.
 
 ## Installing locally
 
